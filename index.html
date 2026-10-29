@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>村田岡原 勤怠連絡 / Murata-Okaharu Absence Notice</title>
+<meta name="description" content="従業員が欠勤・遅刻・有給休暇などを連絡し、責任者が確認する社内向けWebアプリ。 An internal web app for employees to submit attendance notices.">
+<style>
+  :root {
+    --bg: #fbfbfa;
+    --fg: #1d2327;
+    --muted: #5b646b;
+    --line: #d9dddf;
+    --accent: #1f5f8b;
+    --mark: #fff1b8;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16191b;
+      --fg: #e8eaeb;
+      --muted: #a2abb1;
+      --line: #343b40;
+      --accent: #7fb8e0;
+      --mark: #5a4a10;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Hiragino Sans", "Noto Sans JP", "Yu Gothic", "Meiryo", system-ui, sans-serif;
+    line-height: 1.85;
+  }
+  main { max-width: 40rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  h1 { font-size: 1.6rem; line-height: 1.4; margin: 0 0 0.25rem; }
+  .sub { color: var(--muted); margin: 0 0 1.5rem; }
+  h2 { font-size: 1.1rem; margin: 2.2rem 0 0.5rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--line); }
+  p, ul { margin: 0.6rem 0; }
+  ul { padding-left: 1.3rem; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  nav.lang { font-size: 0.9rem; margin-bottom: 1.5rem; }
+  nav.lang a + a { margin-left: 1rem; }
+  mark { background: var(--mark); color: inherit; padding: 0 0.2em; }
+  section.en { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  footer { margin-top: 3rem; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <nav class="lang" aria-label="Language">
+    <a href="#ja">日本語</a><a href="#en">English</a>
+  </nav>
+
+  <section id="ja" lang="ja">
+    <h1>村田岡原 勤怠連絡</h1>
+    <p class="sub">従業員の勤怠連絡のための社内向けWebアプリ</p>
+
+    <h2>このアプリについて</h2>
+    <p>「村田岡原 勤怠連絡」は、従業員が欠勤・遅刻・早退などの連絡をスマートフォンから送り、責任者や工場長が内容を確認できるようにするための、社内向けのWebアプリです。電話やメッセージで個別に連絡する手間を減らし、誰がいつ休むかを職場全体で把握しやすくすることを目的としています。</p>
+
+    <h2>主な機能</h2>
+    <ul>
+      <li>勤怠連絡の送信：有給、半休、欠勤、遅刻、早退、中抜けの連絡と、その理由・備考の入力</li>
+      <li>連絡一覧の表示：日付や工程で絞り込んで、その日の休みや遅刻を確認</li>
+      <li>責任者・工場長への通知：連絡が届くと、担当者へメールやGoogle Chatで知らせる</li>
+      <li>メッセージ：連絡内容について、本人と責任者・工場長が確認のやり取りをする</li>
+      <li>多言語表示：日本語、ベトナム語、英語に対応</li>
+    </ul>
+
+    <h2>利用できる人</h2>
+    <p>当社の従業員のみが利用できます。一般には公開していません。従業員は、社員番号と本人確認のための情報でアプリを利用し、従業員個人のGoogleアカウントでのログインは必要ありません。</p>
+
+    <h2>プライバシーポリシー</h2>
+    <p>取り扱う情報や利用目的については、<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+
+    <h2>運営者・お問い合わせ</h2>
+    <p>運営者：<mark>【株式会社村田産業】</mark><br>
+    お問い合わせ：<mark>【murata.okaharu@gmail.com】</mark></p>
+  </section>
+
+  <section id="en" class="en" lang="en">
+    <h1>Murata-Okaharu Absence Notice</h1>
+    <p class="sub">An internal web app for employee attendance notices</p>
+
+    <h2>About this app</h2>
+    <p>“村田岡原 勤怠連絡” (Murata-Okaharu Absence Notice) is an internal web app that lets employees report absences, late arrivals, and early departures from their phones, and lets supervisors review them. It reduces the effort of notifying people one by one and helps the whole workplace see who will be away and when.</p>
+
+    <h2>Main features</h2>
+    <ul>
+      <li>Submit notices: full-day paid leave, half-day leave, absence, late arrival, early leave, and temporary out, with a reason and remarks</li>
+      <li>View the list: filter by date and department to check who is away or late on a given day</li>
+      <li>Notify supervisors: managers are notified by email and Google Chat when a notice is submitted</li>
+      <li>Messages: the employee and supervisors can exchange confirmation messages about a notice</li>
+      <li>Multilingual: Japanese, Vietnamese, and English</li>
+    </ul>
+
+    <h2>Who can use it</h2>
+    <p>Only employees of our company can use the app. It is not open to the public. Employees sign in with their employee number and identity verification information; signing in with a personal Google account is not required.</p>
+
+    <h2>Privacy policy</h2>
+    <p>For the information we handle and how we use it, see the <a href="privacy.html#en">Privacy Policy</a>.</p>
+
+    <h2>Operator and contact</h2>
+    <p>Operator: <mark>[Murata Industry, Co., Ltd.]</mark><br>
+    Contact: <mark>[murata.okaharu@gmail.com]</mark></p>
+  </section>
+
+  <footer>© <mark>【株式会社村田産業】</mark></footer>
+</main>
+</body>
+</html>
